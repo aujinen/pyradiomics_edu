@@ -1,3 +1,43 @@
+# pyradiomics for educational use by H.Nishiyama
+オリジナルサイトからのフォークにて名称をpyradiomicsからpyradiomics_eduにしたためか、<br>
+インストールされるバージョン表示がオリジナルの版とは異なる状態になるようです。<br>
+利用に際し、不具合が発生する場合には、一度閉鎖して、名称をオリジナルの版と同一にして再度フォークしなおします。<br>
+
+## Installation Instructions
+## インストール方法
+### Software required before installation
+### インストール前に必要なソフト類
++ uv<br>
+[uvインストールとPATH設定のやさしい解説（PowerShellとCMD両対応）](https://note.com/youpapalife/n/na3bdb65e8d18)
++ git<br>
+[Gitのインストール方法(Windows版)](https://qiita.com/takeru-hirai/items/4fbe6593d42f9a844b1c)
++ Build Tools for Visual Studio<br>
+参考資料：[Visual Studio で C と C++ のサポートをインストールする](https://learn.microsoft.com/ja-jp/cpp/build/vscpp-step-0-installation?view=msvc-170)<br>
+下記のサイトページ下方の「すべてのダウンロード」部分にあります<br>
+[https://visualstudio.microsoft.com/ja/downloads/](https://visualstudio.microsoft.com/ja/downloads/)<br>
+→　Tools For Visual Studio<br>
+→　Build Tools for Visual Studio 2026<br>
+→　【ダウンロード】後、インストーラー実行<br>
+→　「C++によるデスクトップ開発」を選択し、「x64/x86 用 MSVC ビルドツール」、「Windows 11 SDK」、「Windows 用 C++ CMake ツール」の3つを最低限選択してインストール
+### for windows11, PowerShell
+
+```
+git clone https://github.com/aujinen/pyradiomics_edu.git
+cd .\pyradiomics_edu\
+[System.Environment]::SetEnvironmentVariable('UV_MALWARE_CHECK',1)
+uv sync
+```
+※上記手順で```pyradiomics 0.1.dev1340+g15a938dad```がインストールされます。
+### add ipykernel for ipynb fiels used in VS-Code
+### VS-Codeでipynbファイルを利用するために必要なライブラリ（ipykernel）の追加
+```
+uv add ipykernel
+```
+※python 3.13の場合、上記手順で```pyradiomics 0.1.dev1340+g15a938dad.d20260625```に変更されます。
+
+*** 以下はオリジナルのREADME.mdの内容です ***
+=====
+
 # pyradiomics v3.1.0
 
 \<-- ## Build Status
