@@ -10,7 +10,7 @@ dataDir = './'
 imageName = os.path.join(dataDir, 'forRadiomicsTest.nrrd')
 maskName = os.path.join(dataDir, 'Segmentation.seg.nrrd')
 
-params = os.path.join(dataDir, '2D_sample_bin4.yaml')
+params = os.path.join(dataDir, '2D_sample.yaml')
 
 extractor = featureextractor.RadiomicsFeatureExtractor(params)
 
