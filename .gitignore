@@ -165,3 +165,8 @@ Thumbs.db
 
 # Ignore test outputs
 data/*.csv
+
+# Ignore local test
+.venv
+uv.lock
+pyproject.toml
