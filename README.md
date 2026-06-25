@@ -1,8 +1,7 @@
 # pyradiomics for educational use by H.Nishiyama
 The version number displayed after installation differs from the original; this is likely because the project name was changed from `pyradiomics` to `pyradiomics_edu` when forking from the original repository.<br>
-Apart from the additional files and folders listed below, the project contents are identical to the original, and no other changes have been made<br>
+Apart from the additional files and folders listed below, the project contents are identical to the original, and no other changes have been made.<br>
 File: `README_edu.md`<br>
-File: `.gitignore`<br>
 This part of this file<br>
 Folder: `workspace`<br>
 Should any issues arise during use, the plan is to delete this repository and fork it again using the original name.<br>
