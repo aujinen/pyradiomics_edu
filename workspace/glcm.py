@@ -1,4 +1,6 @@
 #===
+# Copyright 2017 Harvard Medical School
+#---
 # Modified by H.Nishiyama with GitHub Copilot on 2026-06-26
 # Modified part starts with "#+++" or "#>>>", and ends with "#---"
 # 2026-06-26 21:47
