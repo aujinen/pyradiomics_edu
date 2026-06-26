@@ -34,8 +34,7 @@ dependencies = [
     "numpy>=2.0",
     "SimpleITK>=2.4.0",
     "PyWavelets >= 1.6.0",
-    "pykwalify >= 1.6.0",
-    "ipykernel>=6.31.0",
+    "pykwalify >= 1.6.0"
 ]
 
 [project.optional-dependencies]
