@@ -1,7 +1,9 @@
 #===
 # Modified by H.Nishiyama with GitHub Copilot on 2026-06-26
 # Modified part starts with "#+++" or "#>>>", and ends with "#---"
-# 2026-06-26
+# 2026-06-26 21:47
+# `sumP_glcm` and `raw_sumP_glcm` are sum of each GLCM before normarization.
+# These two parameters were modified by GtHub Copilot to allow for external extraction.
 #===
 
 from __future__ import annotations
