@@ -41,10 +41,11 @@ cd .\pyradiomics_edu\
 [System.Environment]::SetEnvironmentVariable('UV_MALWARE_CHECK',1)
 uv sync
 ```
-※上記手順で3.1.0や3.1.1ではなく、何故だか```pyradiomics 0.1.dev1340+g15a938dad```がインストールされます。
+※上記手順で3.1.0や3.1.1ではなく、何故だか```pyradiomics 0.1.dev****```がインストールされます。
+「****」部分はインストール環境・インストール先によって異なる様子。
 ### add ipykernel for ipynb fiels used in VS-Code
 ### VS-Codeでipynbファイルを利用するために必要なライブラリ（ipykernel）の追加
 ```
 uv add ipykernel
 ```
-※python 3.13の場合、上記手順で3.1.0や3.1.1ではなく、何故だか```pyradiomics 0.1.dev1340+g15a938dad.d20260625```に変更されます。
+※python 3.13の場合、上記手順で3.1.0や3.1.1ではなく、何故だか```pyradiomics 0.1.dev****.d[日付]```に変更されます。
