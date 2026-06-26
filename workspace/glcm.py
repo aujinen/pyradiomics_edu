@@ -1,5 +1,7 @@
 #===
 # Copyright 2017 Harvard Medical School
+# This file is subject to the licence located below.
+# https://github.com/AIM-Harvard/pyradiomics/blob/master/LICENSE.txt
 #---
 # Modified by H.Nishiyama with GitHub Copilot on 2026-06-26
 # Modified part starts with "#+++" or "#>>>", and ends with "#---"
