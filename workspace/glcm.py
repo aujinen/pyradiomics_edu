@@ -183,9 +183,11 @@ class RadiomicsGLCM(base.RadiomicsFeaturesBase):
 
         sumP_glcm = np.sum(P_glcm, (1, 2))
 
+        #+++ added by GitHub Copilot 2026-06-26
         # Save raw (pre-deletion/pre-normalization) sums for inspection
         # Shape: (Nv, angles)
         self.raw_sumP_glcm = sumP_glcm.copy()
+        #---
 
         # Delete empty angles if no weighting is applied
         if P_glcm.shape[3] > 1:
@@ -203,10 +205,14 @@ class RadiomicsGLCM(base.RadiomicsFeaturesBase):
 
         # Mark empty angles with NaN, allowing them to be ignored in feature calculation
         sumP_glcm[sumP_glcm == 0] = np.nan
-        # Store the sums that will be used for normalization (after possible deletions)
+        #+++ added by GitHub Copilot 2026-06-26
+        #  Store the sums that will be used for normalization (after possible deletions)
         self.sumP_glcm = sumP_glcm.copy()
+        #---
+        #>>> changed by GitHub Copilot 2026-06-26
         # Normalize each glcm
         P_glcm /= self.sumP_glcm[:, None, None, :]
+        #---
 
         return P_glcm
 
