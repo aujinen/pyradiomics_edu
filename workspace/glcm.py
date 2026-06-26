@@ -1,3 +1,9 @@
+#===
+# Modified by H.Nishiyama with GitHub Copilot on 2026-06-26
+# Modified part starts with "#+++" or "#>>>", and ends with "#---"
+# 2026-06-26
+#===
+
 from __future__ import annotations
 
 import numpy as np

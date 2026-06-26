@@ -7,6 +7,8 @@ featureClass:
   glcm:
     - 'Autocorrelation'
     - 'JointAverage'
+    - 'JointEnergy'
+    - 'JointEntropy'
     - 'ClusterProminence'
     - 'ClusterShade'
     - 'ClusterTendency'
@@ -15,8 +17,6 @@ featureClass:
     - 'DifferenceAverage'
     - 'DifferenceEntropy'
     - 'DifferenceVariance'
-    - 'JointEnergy'
-    - 'JointEntropy'
     - 'Imc1'
     - 'Imc2'
     - 'Idm'
@@ -44,11 +44,12 @@ setting:
   # padDistance: 10
   # preCrop: true
 
-  weightingNorm: no_weighting
-  # weightingNorm: None（デフォルト）
-  # 各角度ごとに特徴量を計算し、最後に平均を取ります。
+  #+++ added by HN, 2026-06-26
+  weightingNorm: 'no_weighting'
+  # weightingNorm: None #default
+  # calculate a feature for each angle, then calculate average value.
   # weightingNorm: no_weighting
-  # 角度を統合した GLCM を先に作り、そこから特徴量を計算します。
+  # create a GLCM with integrated angles, then calculate the features.
 
   # 2D settings
   # force2Ddimension setting is relative to the acquisition plane.
