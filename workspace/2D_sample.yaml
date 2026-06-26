@@ -36,7 +36,6 @@ setting:
   # Normalization:
   # normalize: true
   # normalizeScale: 100
-  
   # Resampling:
   # first dimensions always correspond to in-plane resolution.
   # Z-plane resolution should not be modified to avoid mask errors (> than 1 slice after resampling)
@@ -45,6 +44,11 @@ setting:
   # padDistance: 10
   # preCrop: true
 
+  weightingNorm: no_weighting
+  # weightingNorm: None（デフォルト）
+  # 各角度ごとに特徴量を計算し、最後に平均を取ります。
+  # weightingNorm: no_weighting
+  # 角度を統合した GLCM を先に作り、そこから特徴量を計算します。
 
   # 2D settings
   # force2Ddimension setting is relative to the acquisition plane.
