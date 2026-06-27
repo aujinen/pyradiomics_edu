@@ -41,11 +41,13 @@ cd .\pyradiomics_edu\
 [System.Environment]::SetEnvironmentVariable('UV_MALWARE_CHECK',1)
 uv sync
 ```
-※上記手順で3.1.0や3.1.1ではなく、何故だか```pyradiomics 0.1.dev****```がインストールされます。
-「****」部分はインストール環境・インストール先によって異なる様子。
+※上記手順で3.1.0や3.1.1ではなく、```pyradiomics 0.1.dev****```と表示されるバージョンがインストールされます。<br>
+これはpyproject.toml の仕様に基づく、uv の動的バージョン管理によるものです。<br>
+[How to add dynamic versioning to uv projects](https://pydevtools.com/handbook/how-to/how-to-add-dynamic-versioning-to-uv-projects/)<br>
+内容的にはオリジナルサイトから全く手を加えていないので```pyradiomics 3.1.0```そのものとなります。<br>
 ### add ipykernel for ipynb fiels used in VS-Code
 ### VS-Codeでipynbファイルを利用するために必要なライブラリ（ipykernel）の追加
 ```
 uv add ipykernel
 ```
-※python 3.13の場合、上記手順で3.1.0や3.1.1ではなく、何故だか```pyradiomics 0.1.dev****.d[日付]```に変更されます。
+※python 3.13の場合、上記手順でバージョン表示は```pyradiomics 0.1.dev****.d[日付]```に変更されます。<br>
