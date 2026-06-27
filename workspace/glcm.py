@@ -8,6 +8,8 @@
 # 2026-06-26 21:47
 # `sumP_glcm` and `raw_sumP_glcm` are sum of each GLCM before normarization.
 # These two parameters were modified by GtHub Copilot to allow for external extraction.
+# 2026-06-28 04:39:52<br>
+# Modified the code to extract the GLCM and angle information immediately after calculation as `orginal_P_glcm` and `original_angles`.<br>  
 #===
 
 from __future__ import annotations
@@ -155,6 +157,11 @@ class RadiomicsGLCM(base.RadiomicsFeaturesBase):
             matrix_args += [self.settings.get("kernelRadius", 1), voxelCoordinates]
 
         P_glcm, angles = cMatrices.calculate_glcm(*matrix_args)
+
+        #+++ added by HN 2026-06-28 04:22:48
+        self.orginal_P_glcm = P_glcm.copy()  # Save the original GLCM before any modifications
+        self.original_angles = angles.copy()  # Save the original angles before any modifications
+        #---
 
         self.logger.debug("Process calculated matrix")
 
