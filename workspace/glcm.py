@@ -228,10 +228,8 @@ class RadiomicsGLCM(base.RadiomicsFeaturesBase):
         #  Store the sums that will be used for normalization (after possible deletions)
         self.sumP_glcm = sumP_glcm.copy()
         #---
-        #>>> changed by GitHub Copilot 2026-06-26
         # Normalize each glcm
-        P_glcm /= self.sumP_glcm[:, None, None, :]
-        #---
+        P_glcm /= sumP_glcm[:, None, None, :]
 
         return P_glcm
 
